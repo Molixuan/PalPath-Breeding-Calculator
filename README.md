@@ -23,15 +23,15 @@ This program relies entirely on Python's standard libraries. **No external insta
     ```
 4. Follow the interactive on-screen menu to explore the database.
 
-## ✨ Key Features & Advanced Concepts Demonstrated
-This project was built focusing on robustness, efficient data manipulation, and software engineering best practices:
+## ✨ Concepts Applied
+This project incorporates several concepts covered in the course to build a functional CLI tool:
 
-* **Object-Oriented Programming (OOP):** Creatures are instantiated as individual objects (`Creature` class) encapsulating their unique stats (Element, HP, ATK, DEF) and relational parentage, treating memory-loaded data as a lightweight relational entity.
-* **Double Recursion & Set Logic:** * Employs a recursive depth-first search to traverse and print the hierarchical breeding lineage tree with dynamic visual indentation.
-  * Uses a separate recursive function paired with Python `Sets` to collect base material requirements. Since parents do not disappear after breeding in-game, the set automatically prevents duplicates, giving the user an accurate "shopping list" of unique base species to catch.
-* **File I/O & Exception Handling:** Dynamically reads data from `breeding_recipes.csv` using `csv.DictReader` wrapped inside rigorous `try-except` blocks to handle potential file corruption or missing dependencies gracefully.
-* **Advanced Data Filtering & Lambda Sorting:** Implements advanced in-memory queries (Option 3) allowing users to filter objects by element or dynamically rank the top 3 creatures based on combat stats (HP, ATK, DEF) utilizing custom `Lambda` sorting keys.
-* **Fuzzy String Matching (Fault Tolerance):** Integrates Python's built-in `difflib` module to automatically catch and correct minor user typographical or casing errors, enhancing user experience and preventing system crashes.
+* **Object-Oriented Programming (OOP):** Uses a `Creature` class to structure individual stats (Element, HP, ATK, DEF) and parent relationships.
+* **Recursion & Sets:** Implements recursive functions to traverse and display the breeding tree. Python `Sets` are used to filter duplicate base creatures, reflecting the game mechanic where parents are reusable.
+* **File I/O & Error Handling:** Reads data from `breeding_recipes.csv` using `csv.DictReader`, incorporating `try-except` blocks to handle missing or unreadable files.
+* **Data Sorting (Lambda):** Utilizes custom `lambda` functions to sort the dictionary, allowing users to rank creatures by specific combat stats.
+* **String Matching:** Uses the built-in `difflib` module to offer spelling suggestions if a user mistypes a creature's name.
 
 ---
 *Created for COMP9001 Final Project.*
+
