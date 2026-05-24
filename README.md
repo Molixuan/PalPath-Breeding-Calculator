@@ -1,15 +1,15 @@
 # PalPath: The Smart Breeding Calculator
 
-## 📌 Project Overview
+##  Project Overview
 PalPath is a lightweight, command-line utility designed to optimize breeding strategies in monster-catching games. By utilizing a recursive algorithm and a custom CSV database, it eliminates trial-and-error by instantly generating the most efficient breeding lineage and calculating the unique base species required to reach a top-tier target, accurately reflecting realistic game mechanics where parents can be reused.
 
-## 📂 File Structure
+##  File Structure
 The project files are organized inside the `palpath` directory:
 * `palpath/main.py`: The core application script containing the system logic and CLI interface.
 * `palpath/breeding_recipes.csv`: The external database storing creature attributes (Element, HP, ATK, DEF) and breeding formulas.
 * `palpath/README.md`: This comprehensive project documentation file.
 
-## 🚀 How to Run
+##  How to Run
 This program relies entirely on Python's standard libraries. **No external installations (such as pip) are required.**
 
 1. Open your terminal or command prompt in the workspace root.
@@ -23,7 +23,7 @@ This program relies entirely on Python's standard libraries. **No external insta
     ```
 4. Follow the interactive on-screen menu to explore the database.
 
-## ✨ Concepts Applied
+##  Concepts Applied
 This project incorporates several concepts covered in the course to build a functional CLI tool:
 
 * **Object-Oriented Programming (OOP):** Uses a `Creature` class to structure individual stats (Element, HP, ATK, DEF) and parent relationships.
